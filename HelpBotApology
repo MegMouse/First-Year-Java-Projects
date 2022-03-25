@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+public class HelpBotApology
+
+{
+    public static void main(String[] args)
+    {
+        String name = JOptionPane.showInputDialog("What is your name?");
+        System.out.print("Hello, ");
+        System.out.print(name);
+        System.out.println("!");
+        String question = JOptionPane.showInputDialog("My Name is Hal! What would you like me to do?");
+        System.out.print("I'm sorry, ");
+        System.out.print(name);
+        System.out.println(". I'm afraid I can't do that.");
+
+    }
+}
