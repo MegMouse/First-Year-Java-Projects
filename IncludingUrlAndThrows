@@ -1,0 +1,20 @@
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
+public class IncludingUrlAndThrows
+
+{
+    public static void main(String[] args) throws Exception
+    {
+        URL url = new URL("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR4GT3Q_m5TMmL0k9hkUxpaQ7kNIjigGGJZ_A&usqp=CAU");
+        BufferedImage img = ImageIO.read(url);
+        ImageIcon icon = new ImageIcon(img);
+        JOptionPane.showMessageDialog(null, "Hello", "Title", JOptionPane.PLAIN_MESSAGE, icon);
+    }
+}
