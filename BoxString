@@ -1,0 +1,9 @@
+public class BoxString
+{
+    public static void main (String [] args)
+    {
+        System.out.println("+-------+");
+        System.out.println("| JASON |");
+        System.out.println("+-------+");
+    }
+}
